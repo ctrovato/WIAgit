@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Our First Canvas</title>
+
+		<style type="text/css">
+				#Canvas1{
+					border: dotted 3px black;
+					background-color: lightGray;
+				}
+		</style>
+
+		<script>
+		window.onload = function(){
+		var theCanvas = document.getElementById('Canvas1');
+
+		if(theCanvas){
+			var ctx = theCanvas.getContext("2d");
+					if(ctx){
+								ctx.strokeStyle= "blue";
+								ctx.lineWidth = 5;
+								ctx.strokeRect(25,25,100,125);
+
+								// Filled Rectangle
+								ctx.fillStyle = "green";
+								ctx.fillRect (150,25,100,125);
+
+
+
+
+			}
+		}
+	}
+		</script>
+
+	</head>
+	<body>
+		<h1>First Canvas Example</h1>
+		<p>This document contains our first canvas example</p>
+
+		<canvas id= "Canvas1" width="400px" height="300px">Your Browser Does Not Support Canvas </canvas>
+	</body>
+</html>
